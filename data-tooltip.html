@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Push down the data-tootlip attr value</title>
+  <style>
+    div {
+      position: relative;
+    }
+
+    [data-tooltip]::after {
+      content: attr(data-tooltip);
+      left: 0;
+      position: absolute;
+      top: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div data-tooltip="my name is this">oooh! divin</div>
+</body>
+
+</html>
